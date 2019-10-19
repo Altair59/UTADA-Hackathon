@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background-color: transparent;
+}
+
+
+#navigator{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #afe2de;
+	height: 100px;
+	z-index: 2;
+}
+
+#ada_logo{
+	display: inline-block;
+	height: 100px;
+	margin-left: 80px;
+}
+
+nav ul{
+	float:right;
+	margin:0 20px;
+	padding:0;
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	margin: 35px 30px;
+}
+
+nav a{
+	color:#444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+nav a:hover{
+	color:#4cb0a8;
+	border-bottom: solid 1px;
+}
+
+
+#sec_main_page{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	text-align: center;
+	top: 42vh;
+	position: relative;
+}
+.container span{
+	text-transform: uppercase;
+	display: block;
+}
+.text1{
+	color:white;
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 20px;
+	color: #4cb0a8;
+	background: white;
+	position: relative;
+	animation: text 3s,1;
+}
+.text2{
+	font-size: 30px;
+	color: #4cb0a8;
+}
+@keyframes text{
+	0%{
+		color: black;
+		margin-bottom: -40px;
+	}
+	30%{
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+
+.count{
+	margin:40px 0;
+}
+
+.countd{
+	display:inline-block;
+	width: 80px;
+	height: 80px;
+	border:2px solid;
+	margin:0 30px;
+	font-size: 12px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.countd span{
+	display: block;
+	font-size: 26px;
+	margin-top: 14px;
+}
+
+#sec_about{
+
+}
+
+#sec_timeline{
+
+}
+
+
+#sec_judge{
+
+}
+
+#sec_sponsors{
+
+}
+
+#sec_qa{
+
+}
+
+#sec_footer{
+
+}
