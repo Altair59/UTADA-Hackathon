@@ -123,6 +123,26 @@ nav a:hover{
 	margin-top: 14px;
 }
 
+.nav-link-a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  font-size: 1.3rem;
+  color:dimgrey;
+  margin-left: 25px;
+  
+ 
+}
+
+.navbar-logo-a{
+    width: auto;
+    max-height: 250%;
+    display: none; 
+}
+
 #days, #hours, #minutes, #seconds {
 	font-size: 48px;
 }
