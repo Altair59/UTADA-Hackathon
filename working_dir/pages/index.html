@@ -17,12 +17,13 @@
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/superslides/0.6.2/stylesheets/superslides.min.css" rel="stylesheet">
 </head>
 <body>
 
 
-<nav id="navigator">
-	<img id="ada_logo" src="ada_logo_hd.png" alt="ada_logo">
+<nav id="navigator" style="position: absolute;">
+	<img id="ada_logo" src="ada_logo_hd.png" alt="ada_logo" width="100px">
 	<ul>
 		<li><a href="https://www.google.ca">About</a></li>
 		<li><a href="./registration.html"> Register</a></li>
@@ -34,7 +35,7 @@
 </nav>
 
 
-<section id="sec_main_page">
+<section id="sec_main_page" style="position: absolute;">
 	<div class="container">
 		<span class="text1"> Intro to Hackathon 101</span>
 		<span class="text2"> UTADA</span>
@@ -58,6 +59,20 @@
 		</div>
 	</div>
 </section>
+
+<div id="slides" style="z-index: -1000;">
+		<div class="slides-container">
+			<img src="../../../superslides/examples/images/surly.jpeg" width="1024" height="682" alt="Surly">
+			<img src="../../../superslides/examples/images/affinity.jpeg" width="1024" height="685" alt="Affinity">
+		  <img src="../../../superslides/examples/images/people.jpeg" alt="Cinelli">
+		  <img src="../../../superslides/examples/images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
+		</div>
+	
+		<!-- <nav class="slides-navigation">
+		  <a href="#" class="next">Next</a>
+		  <a href="#" class="prev">Previous</a>
+		</nav> -->
+	  </div>
 
 <section id="sec_about" class="about">
 	<div class="about_header" style="visibility: visible; animation-name: fadeInUp;">
@@ -302,14 +317,23 @@
 <section id="sec_sponsors">
 	
 	<div class = "sponsor_container" >
-	<div class="ezImage">
-		<img src="../assets/easyGroup.JPG" class="ezImage" alt="tommy"/>
+	
+	<div class = "hover column" > 
+
+			<div> 
+				<figure><div class = "ezImage"> <img src="../assets/easyGroup.JPG" class="ezImage" alt="tommy" /></div></figure>
+				<span>sponsor1</span>
+			</div>
+
+				<div class="ezImage">
+						<img src="../assets/easyGroup.JPG" class="ezImage" alt="tommy"/>
+					</div>
+				</div>
+
 	</div>
 
-	<div class="ezImage">
-			<img src="../assets/easyGroup.JPG" class="ezImage" alt="tommy"/>
-		</div>
-	</div>
+
+	
 	
 
 
@@ -324,15 +348,23 @@
 </section>
 
 <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/superslides/0.6.2/jquery.superslides.min.js" crossorigin="anonymous"></script>
+	<script>
+			$(function() {
+			  $('#slides').superslides({
+				hashchange: true
+			  });
+			});
+		  </script>
 </body>
 
 </html>
