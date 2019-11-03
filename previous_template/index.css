@@ -8,15 +8,6 @@ body{
 }
 
 
-#navigator{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #afe2de;
-	height: 100px;
-	z-index: 2;
-}
-
 #ada_logo{
 	display: inline-block;
 	height: 100px;
@@ -29,9 +20,19 @@ nav ul{
 	padding:0;
 	list-style: none;
 }
+
 nav li{
 	display: inline-block;
 	margin: 35px 30px;
+}
+
+nav li~after{
+    content: "_";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #741cf2;
+    transition: 0.2s;
 }
 
 nav a{
@@ -52,11 +53,10 @@ nav a:hover{
 	width: 100%;
 }
 
-.container{
-	text-align: center;
-	top: 42vh;
-	position: relative;
+.container span{
+	margin-top: 100px;
 }
+
 .container span{
 	text-transform: uppercase;
 	display: block;
@@ -111,6 +111,55 @@ nav a:hover{
 	margin-top: 14px;
 }
 
+.two:hover ~ hr {
+  margin-left: 17%;
+}
+
+.three:hover ~ hr {
+  margin-left: 34%;
+}
+
+.four:hover ~ hr {
+  margin-left: 51%;
+}
+
+.five:hover ~ hr {
+  margin-left: 68%;
+}
+
+.six:hover ~ hr {
+  margin-left: 95%;
+}
+
+hr {
+  content: "";
+  height: .25rem;
+  width: 17%;
+  margin: 0;
+  background: #741cf2;
+  border: none;
+  transition: 0.2s ;
+}
+
+.nav-link-a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  font-size: 1.3rem;
+  color:dimgrey;
+  margin-left: 25px;
+  
+ 
+}
+
+.navbar-logo-a{
+    width: auto;
+    max-height: 250%;
+    display: none; 
+}
 #sec_about{
 
 }
