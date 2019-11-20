@@ -6,7 +6,12 @@
 	font-family: sans-serif;
 }
 body{
-	background-color: transparent;
+    background-color: transparent;
+}
+
+.faq{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
@@ -218,9 +223,3 @@ section .section-title {
     font-size:16px;
     padding: 20% 5%;
 }
-/* 
-.card-body{
-    min-height: 312px;
-    display: table-cell;
-    vertical-align:middle;
-} */
