@@ -146,11 +146,75 @@ nav a:hover{
 
 }
 
-.ezImage{
-	width: 200px;
-	height:100px;
-	display:inline-block;
+.sponsor_container{
+	text-align: center;
+	top: 20vh;
+	position: relative;
 }
+
+.sponsor_container span{
+	text-transform: uppercase;
+	display: block;
+}
+
+.sponsor_title{
+	color:white;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 8px;
+	color: #4cb0a8;
+	background: white;
+	text-align: center;
+	position: relative;
+	display: block;
+}
+
+.sponsor_container{
+	display: inline-block;
+	height: 500px;
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.sponsor_container span{
+	text-transform: uppercase;
+	display: block;
+}
+
+.sp0 {
+	position: absolute;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #4cb0a8;
+}
+  
+  .card:hover .sp0 {
+	opacity: 1;
+  }
+
+  .sp1 {
+	position: absolute;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #4cb0a8;
+}
+  
+  .card:hover .sp1 {
+	opacity: 1;
+  }
+
+  .sp2 {
+	position: absolute;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #4cb0a8;
+	width: auto;
+}
+  
+  .card:hover .sp2 {
+	opacity: 1;
+  }
 
 #sec_qa{
 
