@@ -1,26 +1,30 @@
-*{
+/* *{
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
 body{
 	background-color: transparent;
-}
+} */
 
 
-#navigator{
-	position: fixed;
-	top: 0;
+.nav-item::after {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 2px;
+	background: #741cf2;
+	transition: 0.2s;
+  }
+  .nav-item:hover::after {
 	width: 100%;
-	/* background-color: #afe2de; */
-	height: 100px;
-	z-index: 2;
-}
+  }
+
+
 
 #ada_logo{
 	display: inline-block;
 	height: 100px;
-	margin-left: 80px;
 }
 
 nav ul{
@@ -29,11 +33,6 @@ nav ul{
 	padding:0;
 	list-style: none;
 }
-nav li{
-	display: inline-block;
-	margin: 35px 30px;
-}
-
 nav a{
 	color:white;
 	text-decoration: none;
@@ -41,20 +40,14 @@ nav a{
 	font-size: 25px;
 }
 
-nav a:hover{
-	color:#4cb0a8;
-	border-bottom: solid 1px;
-}
 
-
-#sec_main_page{
+/* #sec_main_page{
 	height: 100vh;
 	width: 100%;
-}
+} */
 
 .container{
 	text-align: center;
-	top: 32vh;
 	position: relative;
 }
 .container span{
