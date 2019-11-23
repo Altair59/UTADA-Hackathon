@@ -1,112 +1,124 @@
-*{
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
 }
 
-body {
-  	background-color: transparent;
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
 }
 
-#navigator{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #afe2de;
-	height: 100px;
-	z-index: 2;
+section {
+    padding: 60px 0;
 }
 
-#ada_logo{
-	display: inline-block;
-	height: 100px;
-	margin-left: 80px;
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
 }
 
-nav ul{
-	float:right;
-	margin:0 20px;
-	padding:0;
-	list-style: none;
-}
-nav li{
-	display: inline-block;
-	margin: 35px 30px;
+#team .card {
+    border: none;
+    background: #ffffff;
 }
 
-nav a{
-	color:#444;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 25px;
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
 }
 
-nav a:hover{
-	color:#4cb0a8;
-	border-bottom: solid 1px;
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.container{
-	text-align: center;
-	top: 20vh;
-	position: relative;
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
 }
-.container span{
-	text-transform: uppercase;
-	display: block;
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
 }
 
-.overlay0 {
-	position: absolute;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #ee0bd9;
-  }
-  
-  .card:hover .overlay0 {
-	opacity: 1;
-  }
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
 
-  .overlay1 {
-	position: absolute;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #e94734;
-  }
-  
-  .card:hover .overlay1 {
-	opacity: 1;
-  }
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
 
-  .overlay2 {
-	position: absolute;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #e7ee0b;
-  }
-  
-  .card:hover .overlay2 {
-	opacity: 1;
-  }
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
 
-  .overlay3 {
-	position: absolute;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #0b76ee;
-  }
-  
-  .card:hover .overlay3 {
-	opacity: 1;
-  }
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
 
-  .overlay4 {
-	position: absolute;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #42ee0b;
-  }
-  
-  .card:hover .overlay4 {
-	opacity: 1;
-  }
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
