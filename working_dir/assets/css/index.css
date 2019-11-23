@@ -224,7 +224,9 @@ nav a{
 	transition: .5s ease;
 	max-height: 300px;
 }
-
+.main-slider{
+	height: 300rpx;
+}
   
   .card:hover .sp2 {
 	opacity: 1;
