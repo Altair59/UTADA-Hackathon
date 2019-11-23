@@ -161,22 +161,9 @@ nav a:hover{
 }
 
 #sec_sponsors{
-	display: block 
-
-
 
 }
 
-.sponsor_container{
-	text-align: center;
-	top: 20vh;
-	position: relative;
-}
-
-.sponsor_container span{
-	text-transform: uppercase;
-	display: block;
-}
 
 .sponsor_title{
 	color:white;
@@ -192,8 +179,7 @@ nav a:hover{
 
 .sponsor_container{
 	display: inline-block;
-	height: 500px;
-	margin-top: 80px;
+	height: 300px;
 	margin-left: 50px;
 	margin-right: 50px;
 }
@@ -210,9 +196,15 @@ nav a:hover{
 	background-color: #4cb0a8;
 }
   
+
+.card{
+	height:
+}
   .card:hover .sp0 {
 	opacity: 1;
   }
+
+  
 
   .sp1 {
 	position: absolute;
