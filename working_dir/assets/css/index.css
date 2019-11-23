@@ -161,7 +161,7 @@ nav a:hover{
 }
 
 #sec_sponsors{
-
+	padding: 0;
 }
 
 
@@ -175,6 +175,7 @@ nav a:hover{
 	text-align: center;
 	position: relative;
 	display: block;
+	margin-top: 100px;
 }
 
 .sponsor_container{
@@ -189,16 +190,23 @@ nav a:hover{
 	display: block;
 }
 
+.card{
+	min-height: 300px;
+	width: auto;
+}
+
+.card-body.text-center{
+	max-height: 300px;
+}
+
+.card-text{
+	max-height: 200px;
+}
+
 .sp0 {
 	position: absolute;
 	opacity: 0;
 	transition: .5s ease;
-}
-  
-
-.card{
-	min-height: 300px;
-	width: auto;
 }
 
   .card:hover .sp0 {
@@ -221,8 +229,9 @@ nav a:hover{
 	position: absolute;
 	opacity: 0;
 	transition: .5s ease;
-	
+	max-height: 300px;
 }
+
   
   .card:hover .sp2 {
 	opacity: 1;
