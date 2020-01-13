@@ -1,124 +1,13 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-*{
-	padding: 0;
-	margin: 0;
-	font-family: sans-serif;
-}
-body{
-    background-color: transparent;
-}
-
 .faq{
     margin-left: 5%;
     margin-right: 5%;
-}
-
-
-#navigator{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #afe2de;
-	height: 100px;
-	z-index: 2;
-}
-
-#ada_logo{
-	display: inline-block;
-	height: 100px;
-	margin-left: 80px;
-}
-
-nav ul{
-	float:right;
-	margin:0 20px;
-	padding:0;
-	list-style: none;
-}
-nav li{
-	display: inline-block;
-	margin: 35px 30px;
-}
-
-nav a{
-	color:#444;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 25px;
-}
-
-nav a:hover{
-	color:#4cb0a8;
-	border-bottom: solid 1px;
-}
-
-
-#sec_main_page{
-	height: 100vh;
-	width: 100%;
-}
-
-.container{
-	text-align: center;
-	top: 42vh;
-	position: relative;
-}
-.container span{
-	text-transform: uppercase;
-	display: block;
-}
-.text1{
-	color:white;
-	font-size: 60px;
-	font-weight: 700;
-	letter-spacing: 8px;
-	margin-bottom: 20px;
-	color: #4cb0a8;
-	background: white;
-	position: relative;
-	animation: text 3s,1;
-}
-.text2{
-	font-size: 30px;
-	color: #4cb0a8;
-}
-@keyframes text{
-	0%{
-		color: black;
-		margin-bottom: -40px;
-	}
-	30%{
-		letter-spacing: 25px;
-		margin-bottom: -40px;
-	}
-	85%{
-		letter-spacing: 8px;
-		margin-bottom: -40px;
-	}
-}
-
-.faq {
     position: relative;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
-    box-shadow: none;
-    outline: none;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-.card {
-    background-color:#afe2de;
+.faq .card {
+    background-color:#ABB2B9 ;
     position: relative;
     border-radius: 10px;
 }
@@ -132,7 +21,7 @@ section .section-title {
     transform: rotateY(0deg);
     border-radius: 1rem;
     border:5px;
-    border-color: aqua;
+    border-color: #ABB2B9 ;
 }
 
 .image-flip:hover .frontside,
@@ -168,7 +57,7 @@ section .section-title {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
+    background: #ABB2B9;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -204,7 +93,7 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007b5e !important;
+    color: #ABB2B9 !important;
 }
 .frontside .card-text{ 
     color: white;
